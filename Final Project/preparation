@@ -1,1 +1,14 @@
+For my final project, I plan on creating a musical instrument. I plan to use 5 stepper motors to generate the sound each of which
+have different speeds/sounds. I will create a wooden box to hold these motors. The speed and sound of these motors will be 
+dictated by how close objects are to a proximity sensor in front of the box. The sketch for the project can be seen in this same folder
 
+Top 3 Questions:
+How can I use the stepper motors to create different sounds? 
+How can I properly use wood to create good acoustics?
+What type of sensor might I use to be accurate? Is it possible to "hide" this sensor behind wood and still detect only 
+  motion changes on the outside of the box?
+  
+  Required Materials: 
+  - 5 Stepper Motors
+  - Thin Wood
+  - 5 distance/proximity sensors
