@@ -1,0 +1,66 @@
+** Overall project concept and description **
+The concept is to produce an unusual musical instrument that provides a stark contrast between the natural image and meaning
+that the wooden exterior evokes and the modernistic stepper motors that are used to create the sounds. The 
+piece is also supposed to be jarring and make users uncomfortable, with the sound coming primarily from the contact of two 
+strips of sandpaper of varying grades with each other. More specifically, my intention was that passerbys can walk by the instrument and put their hands at various heights above the instrument to 
+control the speed and the sound of the stepper motors. 
+
+The piece was inspired by a similar interactive piece in NYC's subway: https://www.youtube.com/watch?v=QjwxE_kI5wA. 
+I used this as inspiration but I believed that it was necessary that I added a mechanical twist to it by adding the 
+sound of the stepper motors and the grinding of the sandpaper
+
+
+
+
+**Overall picture(s)**
+
+
+
+
+
+System diagram of the hardware and software
+Schematics (if hardware is present)
+**List of important parts**
+* 4 x stepper motors
+* 4 x speakers
+* 4 x piezo discs
+* 2 x MAX 98306 Adafruit Amplifiers
+* 4 x Arduino Unos
+* 4 x Adafruit Motorshields
+* 4 x 25-125 cm IR Distance Sensor
+Pictures of the electronics
+Code (with good comments, good variable names, proper indentation, etc.)
+**Explain how your project works and how you built it.**
+There are two sources of sound for the installation: the sound of the two
+sandpaper pieces (one attached to the shaft and the other pasted to a small piece of wood glued to the board) and the mechanical
+sound of the different stepper motors, with four different motors with different grades of sandpaper rotating. The sounds of the 
+instrument were amplified by piezo discs, with one being places under each of the four stepper motors. The piezo discs amplified the sounds
+to be twice as loud from what I observed. The piezo discs would then be wired to an amplifier, which would then be connected a small speaker. 
+
+The speed was controlled by the values of an analog input in the form of an infrared distance sensor. These were positioned at the
+bottom of the piece, with the maximum value being reached at 25cm away from the sensor, with no impact on the reading if an object is closer.
+A board was constructed at a height of 25cm above the base of the piece, with holes cut into the board to signify where the users could
+hover their hands. The maximum value of the IFR is around 600. The distance would have to be mapped to higher values to coherently reflect
+the movement of the stepper motor. I tested this for a while, and decided values between 0 and 800 would be perfect, as values over 800 seemed
+to diminish the speed of the motor. 
+
+I originally built the project as a few stepper motors with sandpaper on the shaft contacting a piece of wood with sandpaper attached.
+This was the prototype and was quickly. My idea was then to construct a sort of triangular prism as seen in the prototype sketch
+drawing. This was also quickly scrapped because I needed to produce a project which could be carried as a whole, that could, for 
+the sake of practicality, have its components easily accessible if I needed to move them when constructing it, and something that could
+sit on a table. So my final idea was born about a week before the show, with two boards (almost like a table), with one being positioned
+25cm over the other. 
+
+**Discuss what problems you ran into and how you resolved them or worked around them**
+* Problem 1: Getting the stepper motors to run at the same time. This was probably the biggest problem I encountered, with Arduino simply
+not allowing me to run multiple stepper speeds at the same time. After much help from Michael with editing Adafruit Motorshield Library
+we were not able to figure out how to have multiple stepper motors run from just one Arduino. I was then forced to remove the IFRs from the one 
+board, solder them onto one motorshield each with one stepper on each motorshield. 
+* Problem 2: The sound of the venue. This was a real challenge because I did not anticipate how loud 006 would be during the showcase
+when I was testing it in the hours prior to the showcase, with lots of noise and people talking, the motors could still be heard from several
+feet away, however, the sounds of the showcase made it only possible to hear the piece within a feet or two. I simply was not able to 
+resolve this problem. I thought that the speakers and the piezo discs would do the trick in the loud showcase but I was mistaken.
+* Problem 3: Getting the sound of the sandpaper just right. I hot glued and superglued the sandpaper strips to the shafts of my stepper
+motors, and hot glued the sandpaper to the wooden blocks below the steppers. It was extremely difficult to create the sound that I intended: 
+a jarring uncomfortable sound of two sandpapers grinding against each other. I was able to resolve this from repeated gluings and by sanding
+down the wood blocks to be very precise heights. 
