@@ -9,14 +9,10 @@ The piece was inspired by a similar interactive piece in NYC's subway: https://w
 I used this as inspiration but I believed that it was necessary that I added a mechanical twist to it by adding the 
 sound of the stepper motors and the grinding of the sandpaper
 
-
-
+A video of a friend playing with the project at the showcase: https://www.youtube.com/watch?v=t9Wwq_b6BVw&feature=youtu.be
 
 **Overall picture(s)**
-
-
-
-
+Please find all pictures for this project in the final project folder labelled accordingly. 
 
 System diagram of the hardware and software
 Schematics (if hardware is present)
@@ -28,8 +24,7 @@ Schematics (if hardware is present)
 * 4 x Arduino Unos
 * 4 x Adafruit Motorshields
 * 4 x 25-125 cm IR Distance Sensor
-Pictures of the electronics
-Code (with good comments, good variable names, proper indentation, etc.)
+
 **Explain how your project works and how you built it.**
 There are two sources of sound for the installation: the sound of the two
 sandpaper pieces (one attached to the shaft and the other pasted to a small piece of wood glued to the board) and the mechanical
